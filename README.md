@@ -7,17 +7,17 @@
 ## 目录
 
 | 目录 | 内容 |
-|---|---|
-| `app/` | ARM应用的22个编译单元、必要头文件、CMake构建入口和测试 |
-| `fpga/source/` | 当前FPGA镜像对应的采集、DDR、PCIe、按键/LED及必要兼容源码 |
-| `fpga/project/` | PDS工程、时序约束、管脚文件及当前配对位流 |
-| `deployment/models/` | 正式链实际加载的5个RKNN模型 |
-| `deployment/driver/`、`deployment/common/` | 已验证参考PCIe驱动源码、公共ABI头和ko |
-| `deployment/runtime/`、`deployment/scripts/` | 原始默认参数、启动、正常停止、键盘桥与部署工具 |
-| `deployment/lib/`、`deployment/assets/` | 运行库和中文字库 |
-| `deployment/bin/`、`deployment/recovery/` | 已验收程序和上一软件版文件 |
-| `scripts/` | 源码构建、测试和整个仓库的完整性核验 |
-| `docs/` | 源码来源、构建验证及文件指纹 |
+|---                                           |---                                                    |
+| `app/`                                       | ARM应用的22个编译单元、必要头文件、CMake构建入口和测试    |
+| `fpga/source/`                               | 当前FPGA镜像对应的采集、DDR、PCIe、按键/LED及必要兼容源码 |
+| `fpga/project/`                              | PDS工程、时序约束、管脚文件及当前配对位流                 |
+| `deployment/models/`                         | 正式链实际加载的5个RKNN模型                             |
+| `deployment/driver/`、`deployment/common/`   | 已验证参考PCIe驱动源码、公共ABI头和ko                    |
+| `deployment/runtime/`、`deployment/scripts/` | 原始默认参数、启动、正常停止、键盘桥与部署工具             |
+| `deployment/lib/`、`deployment/assets/`      | 运行库和中文字库                                        |
+| `deployment/bin/`、`deployment/recovery/`    | 已验收程序和上一软件版文件                               |
+| `scripts/`                                   | 源码构建、测试和整个仓库的完整性核验                      |
+| `docs/`                                      | 源码来源、构建验证及文件指纹                             |
 
 目录不纳入独立历史实验、C2四路驱动/发送器、未采用模型、训练数据集、采集素材、长时间运行日志和账户凭据。
 
