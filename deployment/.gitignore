@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.log
+*.pid
+*.lock
+runs/
+build/
+.staging/
+*.tar
+*.tar.gz
+*.xwd
+.DS_Store

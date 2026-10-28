@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "native_aarch64_source_build": true,
+  "compilation_units": 22,
+  "executable_sections_match_frozen_units": 22,
+  "test_groups": 4,
+  "test_group_summaries": [
+    "HW_OSD_TESTS checks=8 failures=0",
+    "CROSSWALK_TESTS checks=66 failures=0",
+    "AD_REQUEST_TESTS checks=49 failures=0",
+    "INTERACTION_PROFILE checks=54 failures=0"
+  ],
+  "total_reported_checks": 177,
+  "c_and_cxx_profile": "-O2 -ffp-contract=off",
+  "rebuilt_app_sha256": "9b1a0b2e1b20d1de48c2351815681322f8f0408b0e8f0d2211a21750392781de",
+  "frozen_default_app_sha256": "3b1d686cb900673a92a36d9c6038da65c37c2c653e43cccb01784851319a3afd",
+  "default_configuration_unchanged": true,
+  "rebuilt_app_launched": false,
+  "fpga_reprogrammed": false,
+  "original_app_last_exit": "normal GUI/compute exit confirmed; no restart requested",
+  "scope": "Source compilation, mock-data tests and executable-object-section comparison; no new road or inference acceptance test"
+}

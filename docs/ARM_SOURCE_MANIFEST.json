@@ -1,0 +1,531 @@
+{
+  "schema": 1,
+  "translation_units": [
+    "main.cpp",
+    "crosswalk_person.cpp",
+    "twinlite_lane_model.cpp",
+    "p3_engine.cpp",
+    "candidate_postprocess.cpp",
+    "lane_shared_frontend.cpp",
+    "twinlite_dash.cpp",
+    "p3_decision_bridge.cpp",
+    "decision_osd.cpp",
+    "ocr_pipeline.cpp",
+    "road_speed_estimator.cpp",
+    "ufld_lane_model.cpp",
+    "yolo.cpp",
+    "p3_road_safety_advisor.cpp",
+    "experiment_metrics.cpp",
+    "local_segments_mirror.cpp",
+    "pci_bar0.cpp",
+    "pcie_frame_source.cpp",
+    "perf_config.cpp",
+    "postprocess.c",
+    "selector_mirror.cpp",
+    "twin_route.cpp"
+  ],
+  "translation_unit_count": 22,
+  "files": [
+    {
+      "path": "app/src/main.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/main.cpp",
+      "bytes": 113727,
+      "sha256": "5367761ef66c2b99e62afb28534bb34e488491dc959f68166f622dc67a7afbb2"
+    },
+    {
+      "path": "app/src/crosswalk_person.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/crosswalk_person.cpp",
+      "bytes": 30296,
+      "sha256": "4549f20116f6913ba1ff53969e323fbf1d1bd339e04f502dd125b1f9cbefdf66"
+    },
+    {
+      "path": "app/src/twinlite_lane_model.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/twinlite_lane_model.cpp",
+      "bytes": 22714,
+      "sha256": "60e7bde841a10147a9753d1ce25b4e6d3cd9a3ce3417756b5e5d35faaaca8688"
+    },
+    {
+      "path": "app/src/p3_engine.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/p3_engine.cpp",
+      "bytes": 90174,
+      "sha256": "44fbb3f51c0fe4c996cdfbd57f845a83e0d7208f412a1be50f5da5d846ce2f83"
+    },
+    {
+      "path": "app/src/candidate_postprocess.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/candidate_postprocess.cpp",
+      "bytes": 30302,
+      "sha256": "5e41a9c99b95d648b206567384b62cba9c297585fc15d8f9e69ca9122565938e"
+    },
+    {
+      "path": "app/src/lane_shared_frontend.cpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/lane_shared_frontend.cpp",
+      "bytes": 11782,
+      "sha256": "023928543f904fac2c3e9a2341713c21f2d8a1f1a8a60432e4359ea29f63dde4"
+    },
+    {
+      "path": "app/src/twinlite_dash.cpp",
+      "source": "/userdata/claude_light_zoom_20261021/src/twinlite_dash.cpp",
+      "bytes": 22470,
+      "sha256": "a92e36a516299738b5f1b65a83bb70235aa85b788c9570e6a0fe1b00b391f671"
+    },
+    {
+      "path": "app/src/p3_decision_bridge.cpp",
+      "source": "/userdata/codex_lane_request_wait_20261028_r01/src/p3_decision_bridge.cpp",
+      "bytes": 53660,
+      "sha256": "33c450ecb048cbe8c9ee4a3578b5baf3a183f7a881eab9d1268234835ce03c9d"
+    },
+    {
+      "path": "app/src/decision_osd.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/decision_osd.cpp",
+      "bytes": 29557,
+      "sha256": "d1c9730b76cb58a5d4a85fdfc4aa95d309264eda46d1afc878b257897e177b7c"
+    },
+    {
+      "path": "app/src/ocr_pipeline.cpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/ocr_pipeline.cpp",
+      "bytes": 5535,
+      "sha256": "7b5a24a5cec4a4523351fbd781a17a67f88e36b98f61b367f2429ec5f14baeb3"
+    },
+    {
+      "path": "app/src/road_speed_estimator.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/road_speed_estimator.cpp",
+      "bytes": 9274,
+      "sha256": "dea62f88e910376a2fda54081ef255985689390769f760edd80291a8d52c5930"
+    },
+    {
+      "path": "app/src/ufld_lane_model.cpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/ufld_lane_model.cpp",
+      "bytes": 12748,
+      "sha256": "c393c09f88949a8396bb98d5c53ee028fd115405b1e14e113e9955568babb831"
+    },
+    {
+      "path": "app/src/yolo.cpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/yolo.cpp",
+      "bytes": 7978,
+      "sha256": "ba24d43e09493baff10fd17d7b330600201fd8cda5eb62fb34b691177c11e084"
+    },
+    {
+      "path": "app/src/p3_road_safety_advisor.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/p3_road_safety_advisor.cpp",
+      "bytes": 15556,
+      "sha256": "afa5ae45a41045a4089335960113a91afc016cbf53cf336db62a2ded763830a7"
+    },
+    {
+      "path": "app/src/experiment_metrics.cpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/experiment_metrics.cpp",
+      "bytes": 3019,
+      "sha256": "43d97278c280d089e44a78afa9d523cb4acfcf763fd701e35a594c52d72ac883"
+    },
+    {
+      "path": "app/src/local_segments_mirror.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/local_segments_mirror.cpp",
+      "bytes": 7590,
+      "sha256": "09a8754a978a10769d9db76eb11ea4fbd8ad4bbf5e43c175fd671c4fb8f9a223"
+    },
+    {
+      "path": "app/src/pci_bar0.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/pci_bar0.cpp",
+      "bytes": 1302,
+      "sha256": "92065d2b6b1c49febe0975e45cfdbdb47acda5ddc315fdf210567b27fa8d0f60"
+    },
+    {
+      "path": "app/src/pcie_frame_source.cpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/pcie_frame_source.cpp",
+      "bytes": 2954,
+      "sha256": "afabd471545c296b1d8463d53a662eda12ea5e72e8d57058c76189afd9c0df60"
+    },
+    {
+      "path": "app/src/perf_config.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/perf_config.cpp",
+      "bytes": 10140,
+      "sha256": "519be39288e086e2d11b05ec4829c35ba888cccadf781e9f243f088faaab64a0"
+    },
+    {
+      "path": "app/src/postprocess.c",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/postprocess.c",
+      "bytes": 7622,
+      "sha256": "1b5e13e6efc78d85376a5b099d6ecde5a9fe754c66d27aed663955f228d00609"
+    },
+    {
+      "path": "app/src/selector_mirror.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/selector_mirror.cpp",
+      "bytes": 17106,
+      "sha256": "cc137c389b742b49481f4955ece6d4ab24ef4e92fac83f473b2c55b1963d151e"
+    },
+    {
+      "path": "app/src/twin_route.cpp",
+      "source": "/userdata/codex_rknn_twin_ab_20261026_r02/src/twin_route.cpp",
+      "bytes": 1146,
+      "sha256": "289b8a3e75ca3829a06edc4d310b52d2e25ff787736c7c57985c91cf8dbf12ee"
+    },
+    {
+      "path": "app/src/atlas_v4_decision_guard.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/atlas_v4_decision_guard.h",
+      "bytes": 2894,
+      "sha256": "cc260f2d22d2f394a9208b125267855df6cd0393cefe4812ffb7e6e261171685"
+    },
+    {
+      "path": "app/src/atlas_v4_shadow.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/atlas_v4_shadow.h",
+      "bytes": 16272,
+      "sha256": "d611900e269903e4bec240c586e8f1d30d400f9421fb589e71f213a95062594e"
+    },
+    {
+      "path": "app/src/candidate_postprocess.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/candidate_postprocess.h",
+      "bytes": 3296,
+      "sha256": "0c3b875c96cd9020d116c0676003dce8bd870abc1ade8f06be041df7d752184c"
+    },
+    {
+      "path": "app/src/crosswalk_person.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/crosswalk_person.h",
+      "bytes": 3292,
+      "sha256": "ef97e9c6147ca87f0f587c2a18e032a996302e7ac22f39abd19f5dc3274c7aa0"
+    },
+    {
+      "path": "app/src/decision_osd.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/decision_osd.h",
+      "bytes": 4426,
+      "sha256": "92a7a64a712b0274931bfea960c7baee6a6f17f809f6d846dc081a63a544ce9c"
+    },
+    {
+      "path": "app/src/disp_publish.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/disp_publish.h",
+      "bytes": 12916,
+      "sha256": "91c2048d6ba3f2908e837e87f743f5b3c2a5d337d8a3e4b8911541f2d00e920e"
+    },
+    {
+      "path": "app/src/display_backend_policy.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/display_backend_policy.h",
+      "bytes": 2422,
+      "sha256": "bc4c7787f38f885552df62c2366c1b6c2552e7370b2cacc37251f38ccdd9499a"
+    },
+    {
+      "path": "app/src/display_compose.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/display_compose.h",
+      "bytes": 2103,
+      "sha256": "7cdf342f8c56c272018a57982d28cc2f7ed3cf969fb1380ba50d575b8231ac22"
+    },
+    {
+      "path": "app/src/experiment_metrics.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/experiment_metrics.h",
+      "bytes": 772,
+      "sha256": "66d455f6d56a233e932f49f9d57ae16c109311637d9de753b85ccafbfcc40a17"
+    },
+    {
+      "path": "app/src/frame_prefetcher.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/frame_prefetcher.h",
+      "bytes": 11107,
+      "sha256": "0c7ccc4f7bc362e117dac3790a53c89519c9a1f25e662406cab9d1ccf99981c9"
+    },
+    {
+      "path": "app/src/hw_osd_config.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/hw_osd_config.h",
+      "bytes": 206,
+      "sha256": "d667ee561028a422b69609171c2812f3e4fcd42c402a27a442803d7039cee9da"
+    },
+    {
+      "path": "app/src/lane_kalman.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/lane_kalman.h",
+      "bytes": 5894,
+      "sha256": "af9a30cb9efd759b3e8c27cafd758e0f6e6a5ab9e180faf2abbda5b02cb4cfdc"
+    },
+    {
+      "path": "app/src/lane_monitor.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/lane_monitor.h",
+      "bytes": 1333,
+      "sha256": "f2dacc8704b96cc67a5bc19a14a7d159af9c45bda37a0544c2f71f5b2d849e78"
+    },
+    {
+      "path": "app/src/lane_pair_hysteresis.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/lane_pair_hysteresis.h",
+      "bytes": 4549,
+      "sha256": "3ea1507cd1d446158096ae8d99e43005b6799a65fe0841349cb3cf6b30d14c6c"
+    },
+    {
+      "path": "app/src/lane_shared_frontend.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/lane_shared_frontend.h",
+      "bytes": 2155,
+      "sha256": "6fa014d9beaf9682bc3351638e9b20e134c47b469041453b1116d23aef88af32"
+    },
+    {
+      "path": "app/src/lane_upgrade_observe.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/lane_upgrade_observe.h",
+      "bytes": 13530,
+      "sha256": "3a44cf2d34436c2c20a8caf95c7bd26a1e13b9cb904c3f24079134c30862bc8c"
+    },
+    {
+      "path": "app/src/light_classes.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/light_classes.h",
+      "bytes": 4297,
+      "sha256": "41959fa10b750c478c6ac38aaa43505c34aedf5e177253f864f862445ae0ca4d"
+    },
+    {
+      "path": "app/src/local_segments_mirror.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/local_segments_mirror.h",
+      "bytes": 4124,
+      "sha256": "8e303e7715e4220d9cb897d73fd625aa773c579f1c2f027066d3fc556612d40e"
+    },
+    {
+      "path": "app/src/main_adapter.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/main_adapter.h",
+      "bytes": 4535,
+      "sha256": "0682d12162437a4cf099d01faca6f8e9c033d05d7688a87eeb4f87328330a8d7"
+    },
+    {
+      "path": "app/src/main_gui_channel.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/main_gui_channel.h",
+      "bytes": 7172,
+      "sha256": "3c6169584a0eb6fdb98f58bb2bb8450f45af6c4cd1eacdc36d45e03e5f851f38"
+    },
+    {
+      "path": "app/src/mirror_adapter.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/mirror_adapter.h",
+      "bytes": 2265,
+      "sha256": "4e5202560ceb390fdbddeee25ffd4c054467cf1cbcc5c16b9fd31845d2ea3534"
+    },
+    {
+      "path": "app/src/ocr_pipeline.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/ocr_pipeline.h",
+      "bytes": 1795,
+      "sha256": "5d5af7830be400205ab10b24a957e7d77a7c9653c5c2325e7151487aac4b7bc4"
+    },
+    {
+      "path": "app/src/one_euro.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/one_euro.h",
+      "bytes": 4245,
+      "sha256": "b5f3def1f00a23bfbe110d383454ed641e1c2a50aab101f39f769e89ba7c7018"
+    },
+    {
+      "path": "app/src/owned_render_frame.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/owned_render_frame.h",
+      "bytes": 363,
+      "sha256": "22454804d8f804bfe43a9a97c905bf343a6017f0b68e53c904bdb6e2fa47cb99"
+    },
+    {
+      "path": "app/src/p3_decision_bridge.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/p3_decision_bridge.h",
+      "bytes": 10148,
+      "sha256": "ea181ea197e8efb17218b563ec1d740bfb59e6f219c0d83812b576692c24bbb0"
+    },
+    {
+      "path": "app/src/p3_engine.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/p3_engine.h",
+      "bytes": 10974,
+      "sha256": "141e7e22b82807bc3750f7e480333bd0503993f66cae04b41c8fcdbd826564c5"
+    },
+    {
+      "path": "app/src/p3_lane_state.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/p3_lane_state.h",
+      "bytes": 334,
+      "sha256": "e19685357f528a03cd1c5e91b377c6d023d515d94d7cd181c185b12c738cb4a0"
+    },
+    {
+      "path": "app/src/p3_light_verify.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/p3_light_verify.h",
+      "bytes": 3266,
+      "sha256": "d7c942a04ed3eebbe794a93d52b6735b2be356adffbc72c8cb3df84a48dfcc0b"
+    },
+    {
+      "path": "app/src/p3_road_safety_advisor.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/p3_road_safety_advisor.h",
+      "bytes": 4763,
+      "sha256": "65c861a9009bc9db9de92f60b7a3d8b4903d4c6cceef46b78c443134b9b38f38"
+    },
+    {
+      "path": "app/src/pci_bar0.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/pci_bar0.h",
+      "bytes": 794,
+      "sha256": "ea6faffb4b42f3834aee577d1f10cdd8f3fc403019b53f17be2407523dcc0bb9"
+    },
+    {
+      "path": "app/src/pcie_frame_source.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/pcie_frame_source.h",
+      "bytes": 1366,
+      "sha256": "0a6fdde4514fb14fec3085f8a6f938fb694f5c99a73cb184f0d372182b4d762e"
+    },
+    {
+      "path": "app/src/perf_config.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/perf_config.h",
+      "bytes": 4064,
+      "sha256": "b4a6156f8c4cfc5042c20ff684a4b44c40b5019a3a94612cc53c92be7abc6809"
+    },
+    {
+      "path": "app/src/postprocess.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/postprocess.h",
+      "bytes": 769,
+      "sha256": "c6f4df0858fea9815c90de7ffcf2e2f5155ad1026b08c00492b9ad32920f035c"
+    },
+    {
+      "path": "app/src/prepared_source.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/prepared_source.h",
+      "bytes": 4256,
+      "sha256": "154eba72e74389b21bde1db2876002a3e05c04fabd458735edc77ad670742fd7"
+    },
+    {
+      "path": "app/src/road_input_build.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/road_input_build.h",
+      "bytes": 3030,
+      "sha256": "07f344a734d3ccc9741479d9fba28243a6580d0a42ee4e2a0683560078f32f2d"
+    },
+    {
+      "path": "app/src/road_speed_estimator.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/road_speed_estimator.h",
+      "bytes": 983,
+      "sha256": "8e4cf236f8a8921e27588b0ea20e42ef5a93869ee13932d382723c40f0dfb9d2"
+    },
+    {
+      "path": "app/src/selector_mirror.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/selector_mirror.h",
+      "bytes": 5399,
+      "sha256": "4667a18e855a28e0cf68029ad7fb26e6d1fd74fdf8b3ca31547e7c45cb0b64f7"
+    },
+    {
+      "path": "app/src/speed_median_window.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/speed_median_window.h",
+      "bytes": 2984,
+      "sha256": "b75218937797e87ac7d726f4909bef6777d1e299f124708cfe0cd34711e024ce"
+    },
+    {
+      "path": "app/src/twinlite_ego_lane_postprocess.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/twinlite_ego_lane_postprocess.h",
+      "bytes": 1681,
+      "sha256": "1361cc0b1658bb83ea34b93e12c934cf58aa8e667d8769a0ee20bbe38a76a66d"
+    },
+    {
+      "path": "app/src/twinlite_lane_model.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/twinlite_lane_model.h",
+      "bytes": 3370,
+      "sha256": "57369a633edc63706ad83e2625bb7a0586a5509a9a6e7675e78034daaf514289"
+    },
+    {
+      "path": "app/src/ufld_lane_model.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/src/ufld_lane_model.h",
+      "bytes": 1833,
+      "sha256": "008e1c656d8b7c7b06c7e64b9261594edf3972bce3a1f1e9f2693474dddb9878"
+    },
+    {
+      "path": "app/includes/pcie_dma_read_test.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/includes/pcie_dma_read_test.h",
+      "bytes": 7899,
+      "sha256": "a55a350ad75e7e6945055a693ea70a3b1ea33ff3588df08a20bda19cdddd37f0"
+    },
+    {
+      "path": "app/includes/rknn_api.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/includes/rknn_api.h",
+      "bytes": 32084,
+      "sha256": "1a3baa1c26bd65b78a8ed766badb843098502d37c930dc89f276bae9ce4a5b8b"
+    },
+    {
+      "path": "app/includes/yolo.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/includes/yolo.h",
+      "bytes": 280,
+      "sha256": "3bc4c108d9bdc86e4cee861d77115c92e7ac9345a9a59a25793c7b13581ecd58"
+    },
+    {
+      "path": "app/prepared_source.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/prepared_source.h",
+      "bytes": 4256,
+      "sha256": "154eba72e74389b21bde1db2876002a3e05c04fabd458735edc77ad670742fd7"
+    },
+    {
+      "path": "app/main_adapter.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/main_adapter.h",
+      "bytes": 4535,
+      "sha256": "0682d12162437a4cf099d01faca6f8e9c033d05d7688a87eeb4f87328330a8d7"
+    },
+    {
+      "path": "app/main_gui_channel.h",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/main_gui_channel.h",
+      "bytes": 7172,
+      "sha256": "3c6169584a0eb6fdb98f58bb2bb8450f45af6c4cd1eacdc36d45e03e5f851f38"
+    },
+    {
+      "path": "app/sdk/hyper_lpr_sdk.h",
+      "source": "/userdata/atlas_v4_demo_20261010/hyperlpr3/include/hyper_lpr_sdk.h",
+      "bytes": 10929,
+      "sha256": "975b448d70780cb105ffbe6b91ccb786902e07cdd60278983352aa5675d3100a"
+    },
+    {
+      "path": "app/common/pango_frame_abi.h",
+      "source": "/userdata/codex_fpga_exp_20260903/03_Host_Software/common/pango_frame_abi.h",
+      "bytes": 1413,
+      "sha256": "699c180702fc3b1039b19b8f8e218a1c3931758b7a41b35cee7cd2e53bd3032a"
+    },
+    {
+      "path": "app/tests/test_crosswalk.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/tests/test_crosswalk.cpp",
+      "bytes": 12623,
+      "sha256": "8e47d91c5acec9a895a7ed3da9ca9a11d8fcaeb4df24b13a0985aac9726780a3"
+    },
+    {
+      "path": "app/tests/test_hw_osd.cpp",
+      "source": "/userdata/codex_pad_crosswalk_release_20261027_r01/tests/test_hw_osd.cpp",
+      "bytes": 456,
+      "sha256": "cbdcdc495b1fb7efa2bc7a882510477f95359c2c1650608df4ba8bfbf366571f"
+    },
+    {
+      "path": "app/tests/baseline_ad_request.cpp",
+      "source": "/userdata/codex_lane_request_wait_20261028_r01/tests/baseline_ad_request.cpp",
+      "bytes": 8041,
+      "sha256": "76d99cbca9aca7577c5c101e6b52e3c1c91f8fa5e3b9913a2b7befac946225eb"
+    },
+    {
+      "path": "app/tests/interaction_profile.cpp",
+      "source": "/userdata/codex_lane_request_wait_20261028_r01/tests/interaction_profile.cpp",
+      "bytes": 4953,
+      "sha256": "6d7137db16085bc65a66fb0368dc34e9b4cb951daa9c8cc742c79d1313ffa48a"
+    },
+    {
+      "path": "app/tests/fresh_fixture.h",
+      "source": "/userdata/codex_lane_request_wait_20261028_r01/tests/fresh_fixture.h",
+      "bytes": 1201,
+      "sha256": "a71f670f3d0bc3237912b8257c8233209c06c8957d951afe07a28d0a36f0fdd9"
+    },
+    {
+      "path": "app/src/ztu/chrono.hpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/ztu/chrono.hpp",
+      "bytes": 2937,
+      "sha256": "f9d59592b227db1f1082c3f827154e4d60b6b723d79f2ac3208e387be9f3ac46"
+    },
+    {
+      "path": "app/src/ztu/cv.hpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/ztu/cv.hpp",
+      "bytes": 22769,
+      "sha256": "facc635c57445172e9be9992f609feda0573e903d2f6c975bdb111c2f4fbc489"
+    },
+    {
+      "path": "app/src/ztu/nn/neon_mathfun.hpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/ztu/nn/neon_mathfun.hpp",
+      "bytes": 9468,
+      "sha256": "1d4e596e7a2948c7ab42f6730156aab60ed539928b24410f922aa62db93134b5"
+    },
+    {
+      "path": "app/src/ztu/nn/structures.hpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/ztu/nn/structures.hpp",
+      "bytes": 3984,
+      "sha256": "099845edf53c0a729ab09595f8c9ca193d9ce85a8890f4e299d0750718a20310"
+    },
+    {
+      "path": "app/src/ztu/nn/yolov5_ztopt_3out_postprocess.hpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/ztu/nn/yolov5_ztopt_3out_postprocess.hpp",
+      "bytes": 9532,
+      "sha256": "605aa5b64daaeaa988da200325652d903171fb00742cd8f5441e51a0566db271"
+    },
+    {
+      "path": "app/src/ztu/rk/ez_rknn.hpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/ztu/rk/ez_rknn.hpp",
+      "bytes": 23277,
+      "sha256": "bc2a85647e1e6f0cacb7e4ce45406ee145609c7897b7884c86ca1f94928a8888"
+    },
+    {
+      "path": "app/src/ztu/rk/rknn_dtype.hpp",
+      "source": "/userdata/display_upgrade_20261019_twinauth_v9/sources/ztu/rk/rknn_dtype.hpp",
+      "bytes": 1451,
+      "sha256": "e74a125d87b13dee3dd3979c2940bb9bfbbd571babd46707b9206a77ab600ce0"
+    }
+  ],
+  "default_app_sha256": "3b1d686cb900673a92a36d9c6038da65c37c2c653e43cccb01784851319a3afd",
+  "scope": "Application sources + required compatibility code and headers, no historical experiment tree",
+  "default_changed": false
+}

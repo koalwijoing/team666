@@ -1,158 +1,121 @@
-# 慧目智行 
+# 慧目智行
 
-本仓库为 **2026年10月28日的板端版本**：原版 TwinLite 权重对应的纯 Pad 模型、交通灯与人车感知、灯复核、ATLAS v4、斑马线区域及预测、中文界面和 A/D 变道交互。
+本仓库为**2026年10月28日的板端版本**，按完整代码提交包的目录组织，包含ARM应用源码、FPGA工程、PCIe驱动、实际使用的模型，以及部署与恢复文件。
 
-主程序直接保存板上正在运行的已验收 ARM64 ELF，完整 SHA256 为：
+代码、模型和配对固件与当日RAR代码包一致。RAR单独交付，仓库直接维护源码文件。对应关系和校验信息见[提交包记录](docs/SUBMISSION_PACKAGE.json)。
+
+## 目录
+
+| 目录 | 内容 |
+|---|---|
+| `app/` | ARM应用的22个编译单元、必要头文件、CMake构建入口和测试 |
+| `fpga/source/` | 当前FPGA镜像对应的采集、DDR、PCIe、按键/LED及必要兼容源码 |
+| `fpga/project/` | PDS工程、时序约束、管脚文件及当前配对位流 |
+| `deployment/models/` | 正式链实际加载的5个RKNN模型 |
+| `deployment/driver/`、`deployment/common/` | 已验证参考PCIe驱动源码、公共ABI头和ko |
+| `deployment/runtime/`、`deployment/scripts/` | 原始默认参数、启动、正常停止、键盘桥与部署工具 |
+| `deployment/lib/`、`deployment/assets/` | 运行库和中文字库 |
+| `deployment/bin/`、`deployment/recovery/` | 已验收程序和上一软件版文件 |
+| `scripts/` | 源码构建、测试和整个仓库的完整性核验 |
+| `docs/` | 源码来源、构建验证及文件指纹 |
+
+目录不纳入独立历史实验、C2四路驱动/发送器、未采用模型、训练数据集、采集素材、长时间运行日志和账户凭据。
+
+## 当前功能
+
+- 车道感知：原版TwinLite权重对应的纯Pad模型。
+- 交通灯、人车感知：LISA与COCO 320；保留灯复核和ATLAS属性保护。
+- 斑马线：几何检测、区域预测、横向提示带及行人区域关联。
+- 交互与显示：中文界面、双目SBS显示、A/D变道请求与风险判断。
+
+灯和Twin每2帧运行一次，人车每帧运行一次；A/D请求最长保留2秒。UFLD、实验性CAAM替换、车速、路牌和四路回放保持关闭。
+
+F键沿用原逻辑：**识别为红灯时触发强行驶报警**。本次目录同步没有增加强制行驶状态切换。
+
+### 必要兼容依赖
+
+当前冻结FPGA工程仍实例化旧RTL车道模块并保留相应寄存器，**ARM正式车道判断不使用这些输出，画面车道由TwinLite生成**。为保证工程可重建，保留这些构建依赖；独立旧RTL车道实验未纳入。
+
+ARM源码中的OCR、UFLD、车速等兼容单元也是现有ELF的链接依赖。它们随源码保留，默认不开启相关功能，也不附带未使用权重。
+
+## ARM源码构建
+
+已验证环境为RK3568 / 3568JHF、ARM64、Debian 12、Linux 6.1.99、GCC/G++ 12.2、CMake 3.25、OpenCV 4.6和GTK 2.24。
+
+在配套板端系统准备依赖：
+
+```bash
+sudo apt-get update
+sudo apt-get install build-essential cmake pkg-config python3 \
+  libopencv-dev libopencv-contrib-dev libgtk2.0-dev libfreetype6-dev \
+  libqt5widgets5 libqt5gui5 libqt5test5 libqt5opengl5 libx11-6
+```
+
+在仓库根目录运行：
+
+```bash
+bash scripts/build_arm.sh
+```
+
+或分步构建：
+
+```bash
+cmake -S app -B build/arm -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+cmake --build build/arm --parallel 1
+ctest --test-dir build/arm --output-on-failure
+```
+
+输出为`build/arm/adas_app`。C和C++均使用`-O2 -ffp-contract=off`；脚本默认单编译任务，可通过`BUILD_JOBS`设置并行数。
+
+构建和单元测试不自动启动重建APP、不装卸驱动或烧录FPGA，也不替换正式默认程序。重建ELF与原始封存ELF分别记录，不能仅凭源码编译成功视为完成新一轮实板运行验收。
+
+## FPGA工程
+
+- 工具：Pango Design Suite **2022.2-SP6.4**。
+- 器件：**PG2L50H，FBG484，速度等级-6**。
+- 工程入口：`fpga/project/project.pds`。
+- 配套文件：`impl.pds`、`project.fdc`、`device_map/image_pcie_capture.pcf`。
+
+源文件相对位置保持为`project/../source/`，生成目录由PDS重新产生。当前位流与校验文件见`fpga/project/generate_bitstream/`及`deployment/firmware/`。
+
+当前板端位流只曾加载到SRAM，未固化SPI。重新加载与掉电恢复说明见[部署说明](deployment/README.md#fpga与掉电恢复)。
+
+## 部署与运行
+
+从本次版本开始，原仓库根目录的部署文件统一位于`deployment/`。先检查文件，再按[部署说明](deployment/README.md)操作：
+
+```bash
+python3 deployment/scripts/verify.py
+sudo python3 deployment/scripts/install.py
+sudo bash deployment/scripts/start.sh
+```
+
+已有程序正在采集时，应先正常退出；安装器会拒绝覆盖活动采集者。目标文件指纹不同时须检查差异，再按部署说明使用带备份的`--replace`。
+
+正常停止：
+
+```bash
+sudo bash deployment/scripts/stop.sh
+```
+
+原始正式APP的SHA256保持为：
 
 ```text
 3b1d686cb900673a92a36d9c6038da65c37c2c653e43cccb01784851319a3afd
 ```
 
-仓库提供程序、实际加载的模型、运行依赖、部署工具和参考驱动源码。主应用使用封存二进制部署；本仓库不提供主应用的完整 C++ 重编译工程。
-
-## 功能与默认配置
-
-| 模块 | 当前配置 |
-|---|---|
-| 车道感知 | TwinLite，纯 Pad 模型；每2帧运行一次 |
-| 交通灯检测 | LISA，7类；每2帧运行一次 |
-| 人车检测 | COCO 320，80类模型；每帧运行一次 |
-| 灯复核 | `light_classifier_cn.rknn` |
-| 灯属性辅助 | ATLAS v4，128输入、FP16；保留当前决策保护逻辑 |
-| 斑马线 | 左目图像几何检测、区域预测、横向提示带及行人区域关联；无额外NPU模型 |
-| 变道交互 | 请求最长保留2000ms；临时目标定位证据不足时等待更新；模拟车道序号不直接充当实际道路边缘 |
-| 判断约束 | 实线、近车、灯态、前方风险、数据有效期等保护保持当前验收配置 |
-| 显示 | Qt主线程显示、中文界面；双目SBS输入 |
-| 当前关闭 | RTL车道感知/绘线、UFLD、实验性CAAM替换、车速、路牌、四路回放 |
-
-**不收录** RTL车道源码/工程、C2四路驱动和发送器、模型训练材料、未采用候选模型、诊断采集帧、大体积运行CSV及历史实验目录。FPGA目录只保留当前配对的已验证位流与校验文件。
-
-## 目录
-
-```text
-bin/           当前默认主程序
-models/        实际加载的5个RKNN模型
-runtime/       原始默认入口、正常停止/回退控制器、日志监督器、键盘桥
-lib/           固定版本的RKNN、RGA和当前ELF需要的HyperLPR动态库
-assets/        中文界面使用的文泉驿字库
-driver/        已加载build-id匹配的参考PCIe驱动ko及源码
-common/        正式驱动所需的帧ABI公共头
-firmware/      当前无硬件OSD位流和匹配smsk；仅作SRAM恢复
-recovery/      上一正式软件版本及原入口，支持软件回退
-desktop/       与板上一致的桌面入口
-tools/         正常GUI退出工具及其源码
-scripts/       安装、启动、正常停止和只读核验
-licenses/      从板端保留的第三方声明
-ARTIFACTS.json 文件来源、目标路径、权限、大小和SHA256
-RELEASE.json   默认参数、版本身份、驱动身份和已验证性能范围
-SHA256SUMS     仓库文件校验清单
-```
-
-历史路径中个别目录带有`caam`或`four_capture`字样，安装清单只使用其中的正常退出工具或键盘包装脚本。它们不表示对应实验功能已启用，仓库内没有复制这些实验工程。
-
-## 运行前提
-
-- Rockchip **RK3568 / 3568JHF**，ARM64，带已配置的FPGA/PCIe采集硬件。
-- 板端已验证系统为 Debian 12、Linux **6.1.99**。预编译驱动仅与对应内核配套。
-- 采集输入为1280×360 RGB565 SBS：左右各640×360，2个缓冲槽，921600字节/帧。
-- X11显示会话`:0`和用户`linaro`存在，`/home/linaro/.Xauthority`有效。
-- 正式PCIe驱动已加载，`/dev/pango_pci_driver`存在。安装脚本不会自动装卸驱动或烧录FPGA。
-
-OpenCV 4.6、Qt5、Python3、X11等使用板端系统软件包；实际版本见[system-packages.tsv](system-packages.tsv)。在配套Debian镜像上可准备：
+## 校验与已验证结果
 
 ```bash
-sudo apt-get update
-sudo apt-get install python3 util-linux libopencv-dev libopencv-contrib-dev \
-  libqt5widgets5 libqt5gui5 libqt5test5 libqt5opengl5 libgtk2.0-0 \
-  libfreetype6 libx11-6
-```
-
-`libhyperlpr3.so`仍是当前封存ELF的动态链接依赖，因此保留该库；这不意味着车牌识别在当前默认模式下启用。操作系统、内核、Qt/OpenCV及厂商NPU驱动需要配套镜像，仓库不是整板系统镜像。
-
-在配套内核的全新冷启动环境中，如尚未加载正式驱动，应先完成安装、确认没有遗留采集者，再手动加载随包模块：
-
-```bash
-sudo insmod /userdata/team666_default_20261028/driver/pango_pci_driver.ko
-```
-
-已加载且build-id匹配时无需重复装卸。驱动源码的公共头保存在`common/`，与`driver/`保持原相对位置；更换内核时需使用对应内核构建树重新编译和验收，不能直接复用此ko。
-
-## 校验与安装
-
-在板端克隆仓库，先核验文件：
-
-```bash
-git clone https://github.com/koalwijoing/team666.git
-cd team666
-python3 scripts/verify.py
+python3 scripts/verify_submission.py
 sha256sum -c SHA256SUMS
 ```
 
-安装前通过界面`Q`正常退出，或在已有本版本的板上使用正常停止脚本。安装器发现仍有采集FD或映射时会拒绝覆盖：
+- ARM源码构建通过；4组测试共177项检查通过。
+- 22个编译单元的可执行代码段与冻结对象逐项一致；此范围不等同于完整ELF逐字节相同。
+- 已验收运行窗口：1280帧、136.3852秒，约9.39 processed FPS；源侧计数约20.6FPS。
+- FPGA部分核对了冻结源码、工程输入和配对位流，本次同步未重新综合或烧录。
 
-```bash
-sudo bash scripts/stop.sh
-sudo python3 scripts/install.py
-```
+详细结果见[构建验证](docs/BUILD_VALIDATION.json)、[对象代码比较](docs/OBJECT_CODE_COMPARISON.json)、[ARM源码清单](docs/ARM_SOURCE_MANIFEST.json)和[FPGA源码清单](docs/FPGA_SOURCE_MANIFEST.json)。`SHA256SUMS`对应本次发布的文件内容，修改文件后需相应更新清单。
 
-全新板上没有既有APP时，直接运行安装器即可。若目标文件已存在且指纹不同，先检查差异，再执行：
-
-```bash
-sudo python3 scripts/install.py --replace
-```
-
-`--replace`把被替换文件备份到`/userdata/team666_install_backups/<时间>/`。安装只复制清单指定的文件，不清空旧目录，不改变采集参数，不启动APP，不自动设置开机自启，也不装卸驱动或加载位流。
-
-需要先检查安装结果而不写真实系统路径时，可使用隔离目录：
-
-```bash
-python3 scripts/install.py --root /tmp/team666-stage
-python3 scripts/verify.py --installed-root /tmp/team666-stage
-```
-
-软件目标路径保持当前板端路径，避免改变封存ELF的硬编码模型路径和原始默认入口。具体映射由`ARTIFACTS.json`逐文件列出。
-
-## 启动、按键与停止
-
-```bash
-sudo bash scripts/start.sh
-sudo python3 scripts/verify.py --board
-```
-
-启动脚本同时启动APP与原键盘桥。已存在的“P3智能驾驶（正式默认）”桌面入口保留原行为，只启动APP；键盘桥需已运行或通过上述脚本启动。只读核验检查唯一采集进程、帧推进、模型/程序指纹、默认参数、键盘、驱动build-id和当前启动的位流配对证明，不开启第二个采集者。
-
-| 按键 | 功能 |
-|---|---|
-| W | 开始/停止模拟驾驶状态 |
-| S | 循环模拟车道位置 |
-| A / D | 左/右变道请求 |
-| F | 原有强制驾驶状态按键；仍沿用程序中的保护逻辑 |
-| Q / Esc | APP正常退出；Q/Esc由APP处理，键盘桥不注入这两个键 |
-
-正常停止APP和键盘桥：
-
-```bash
-sudo bash scripts/stop.sh
-```
-
-停止控制器核对PID与可执行文件，通过GUI请求退出，并检查采集FD/映射释放。若正常退出未确认会报错；不要用强杀进程代替采集停止确认。
-## FPGA与掉电恢复
-
-当前配对镜像为：
-
-| 文件 | SHA256 |
-|---|---|
-| `firmware/current_noosd.sbit` | `a98fedea197cad365acd18af242dbe58bbcc1f082336b04b2239b8ad54e6e962` |
-| `firmware/current_noosd.smsk` | `64489c656be5911510e7c83d4e380fd3cb88f7af02acbc651c0fa77220bc5f17` |
-
-此镜像保留当前采集、PCIe及按键/LED接口，关闭硬件画面OSD。它只曾加载到**SRAM，未固化SPI**。软件安装不包含FPGA烧录操作；重新加载须使用匹配板卡和PDS/JTAG流程，先正常停止所有硬件访问进程，完成实际program/verify与PCIe恢复后再启动软件。
-
-默认入口仅在`/run/codex_p3_noosd_a98fedea.verified`与**当前boot_id+完整位流SHA**匹配时设置`P3_HW_OSD=0`。证明失效时自动恢复Telea遮挡处理。不要复制旧`/run`文件或仅凭文件名制造配对证明；掉电后须重新核实实际加载结果。
-
-## 性能与验收范围
-
-- 已验证窗口：1280帧，136.3852秒，**9.3852 processed FPS**；单帧耗时p95为187.1923ms。
-- 源侧计数约**20.6FPS**。这是源计数，与完整算法处理帧率不同。
-- 变道交互的49项原版兼容检查和54项新交互检查在PC与ARM均通过，共103种检查。
-- 发布包已进行Windows与ARM Linux隔离安装、冲突拒绝/替换备份、脚本语法及动态库解析核验；发布核验记录见[docs/VALIDATION.json](docs/VALIDATION.json)。
-日志写到`/userdata/claude_qt_async_default_20261021/runs/`，逐次运行隔离；控制台日志轮转，逐帧CSV仍会增长。运行日志、PID、锁文件和本次启动的FPGA证明均不放入Git仓库。
+第三方声明保留在`deployment/THIRD_PARTY_NOTICES.md`与`deployment/licenses/`；系统库版本见`deployment/system-packages.tsv`。

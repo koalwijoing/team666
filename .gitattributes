@@ -1,4 +1,5 @@
-* text=auto eol=lf
+# Source and deployment hashes refer to the original file bytes.
+* -text
 *.rknn binary
 *.ko binary
 *.so binary
@@ -6,14 +7,6 @@
 *.ttc binary
 *.sbit binary
 *.smsk binary
-bin/adas_app binary
-tools/gui_quit binary
-recovery/previous_app binary
-# Preserve exact board snapshots, including any original line endings.
-runtime/** -text
-driver/** -text
-common/** -text
-desktop/** -text
-recovery/** -text
-licenses/** -text
-tools/gui_quit.cpp -text
+deployment/bin/adas_app binary
+deployment/tools/gui_quit binary
+deployment/recovery/previous_app binary

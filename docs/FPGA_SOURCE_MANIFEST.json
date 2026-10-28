@@ -1,0 +1,470 @@
+{
+  "scope": "Frozen current a98 no-OSD FPGA build sources, including required legacy lane dependencies; ARM formal lane decisions use TwinLite, not RTL lane outputs",
+  "tool": "Pango PDS 2022.2-SP6.4",
+  "part": "PG2L50H FBG484 -6",
+  "source_file_count": 92,
+  "files": [
+    {
+      "path": "fpga/source/axi_ctrl/axi4_ctrl.v",
+      "bytes": 15067,
+      "sha256": "f33f4d1e5f1184999d3e4c4e88e325a84e78f5893999b33ca981758d4bcc9a0a"
+    },
+    {
+      "path": "fpga/source/cmos_8_16bit.v",
+      "bytes": 2821,
+      "sha256": "3a7fe6e713988ab376d5382043319d4e1e125b5d46bbc1b70eb47e5d26313d8f"
+    },
+    {
+      "path": "fpga/source/common/p3_key_debounce.v",
+      "bytes": 1258,
+      "sha256": "df85c88b6dc0192f0e3c6b355765e9ef3260d7ae16236863e858935c9d273f3b"
+    },
+    {
+      "path": "fpga/source/common/row_buffer_ram.v",
+      "bytes": 3237,
+      "sha256": "8e5e305ef00f7ec5efa29a5553a804a66d80ae0f4e3833b3701304081379fab1"
+    },
+    {
+      "path": "fpga/source/common/seq_div_unsigned.v",
+      "bytes": 3014,
+      "sha256": "6c404d422080efa9076b2c8a813c067f14455d477a90204d180f86bad862e636"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/aq_axi_master_256.v",
+      "bytes": 10707,
+      "sha256": "b7953bdd2751333b2e6ff84215b7276303fd523f79e5dd8f4547087871bff6b1"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/aq_axi_master_256_burst.v",
+      "bytes": 23904,
+      "sha256": "686c0a344ba5171430d9f953b0710f03bced217cb4eaac101ab0e8bef8ef25f1"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/axi_ctrl.v",
+      "bytes": 38173,
+      "sha256": "b8c8d65af865a1385fe1b83ec55a2b7e106688533680b0df10f7b951e0d7f0f6"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/axi_ctrl_256_burst.v",
+      "bytes": 37171,
+      "sha256": "cbd2206beecc368ed965e21d5728a29ba9b7dabfac96488f0220ad05c8dd5f76"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/cmos_write_req_gen.v",
+      "bytes": 2539,
+      "sha256": "120f9e82d34176425daff5e27a3b646222bfd586f874fc060ce0673dd13dd184"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/frame_fifo_read.v",
+      "bytes": 8191,
+      "sha256": "81bb52f2478397eb159757553de80aa79eaf0652d9a3800bbaed613c99cbc5e9"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/frame_fifo_read_256_burst.v",
+      "bytes": 8390,
+      "sha256": "b648275d631d2a101a5e9ad2ef4fbee2c8353cb8a94503327998683d4f04d52b"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/frame_fifo_read_sfp.v",
+      "bytes": 8155,
+      "sha256": "8fb2d70f39666d92000f21530ffcc4db90e554f272045c21474c3b86b9867a40"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/frame_fifo_write.v",
+      "bytes": 7938,
+      "sha256": "4812ff37fcb2bf5feceaf407e68e92f13e1598f5e2be3f331bc1aadbd5584f86"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/frame_fifo_write_256_burst.v",
+      "bytes": 8026,
+      "sha256": "3bdb47c4cf4d54cee8316a9ed3856f50e24dab542b1237ba8f61bfc08e289876"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/frame_read_write.v",
+      "bytes": 16063,
+      "sha256": "4afae447cb1488cfff96d8794f3a95b48096ab0240f3606466d669a5f1287093"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/frame_read_write_256_burst.v",
+      "bytes": 16303,
+      "sha256": "3fa59fac7357670414f30e6254686474aa5be5b5a57db79b16184dca56aaffb3"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/frame_read_write_sfp.v",
+      "bytes": 26612,
+      "sha256": "a2e588df09a11ef82bb20214a445d727a30c0f18cfda8cf889a697423ed893b8"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/mem_read_arbi.v",
+      "bytes": 6092,
+      "sha256": "9fb37c385d9b25bab4f06b61ce9e14985d4d795a7487efa53bc00792142b00e7"
+    },
+    {
+      "path": "fpga/source/frame_ddr3/mem_write_arbi.v",
+      "bytes": 8426,
+      "sha256": "559bcb92343c516e170979ada33ff1a64f21c37e89e116143fbfd278c82bef1e"
+    },
+    {
+      "path": "fpga/source/HDMI/lcd_driver.v",
+      "bytes": 7067,
+      "sha256": "129133a7c262403542fe978182beab9b80ac4f29dc1775b8bba7fbac29d47bad"
+    },
+    {
+      "path": "fpga/source/HDMI/lcd_para.v",
+      "bytes": 3840,
+      "sha256": "92133db5edc076c6a373e76ed1cbdcb3848f5ff1af063d30e997d36c4aaf4418"
+    },
+    {
+      "path": "fpga/source/i2c_com.v",
+      "bytes": 3307,
+      "sha256": "cdf58c9e45361a179fd0647bf7bceff7af7492fc43025d20075097035504134d"
+    },
+    {
+      "path": "fpga/source/image_pcie_capture.v",
+      "bytes": 48031,
+      "sha256": "71294f413ad4cc484b15883a15aed660924a59a235a449fd68c6fec7bce74649"
+    },
+    {
+      "path": "fpga/source/lane/blur3x3.v",
+      "bytes": 3703,
+      "sha256": "0e0e3fe165f9298a0917a4f3d08850652a486caea98a6f7e721c68059a9492c2"
+    },
+    {
+      "path": "fpga/source/lane/edge_threshold.v",
+      "bytes": 1041,
+      "sha256": "3da26def11e3d856a1677eed847930ef8efc109a1a5f79672989d3736044df0c"
+    },
+    {
+      "path": "fpga/source/lane/gap_stat.v",
+      "bytes": 4963,
+      "sha256": "ccd4b3dd74e3d1767c1a2221bb3fefbaf08b65f08636c018b0baba2f7908c234"
+    },
+    {
+      "path": "fpga/source/lane/lane_capture_path.v",
+      "bytes": 10276,
+      "sha256": "a0449067ff2003c5a26bf3073ea803c7ce9656c00c5c071f54cafd3b6267237e"
+    },
+    {
+      "path": "fpga/source/lane/lane_config_sync.v",
+      "bytes": 2409,
+      "sha256": "4e9a3354c617e593f9226dce3b498ffd04fb3d4e3fbced90f2e34313f0cc0b3b"
+    },
+    {
+      "path": "fpga/source/lane/lane_core.v",
+      "bytes": 21355,
+      "sha256": "527ab0f6b7c926eed223817a75d592e950afe71f48baf940762488614ddc2abe"
+    },
+    {
+      "path": "fpga/source/lane/lane_frontend.v",
+      "bytes": 4489,
+      "sha256": "f7ea40ee7156fb9cca2d282fe0aa22f27c6cbdf88b3d06f56a3078a12ed2ee47"
+    },
+    {
+      "path": "fpga/source/lane/lane_geometry.v",
+      "bytes": 5368,
+      "sha256": "91a598454e9edb31871a22146eed7357397a5f43145b390adb01f1b980c3b900"
+    },
+    {
+      "path": "fpga/source/lane/lane_result_cdc.v",
+      "bytes": 7060,
+      "sha256": "4e02b5f835e061176e1e02a394b21e2fb38d238a744685acfcc15764326c7390"
+    },
+    {
+      "path": "fpga/source/lane/lane_result_regs.v",
+      "bytes": 11434,
+      "sha256": "c88d9206fbe6251892a2f5d2a81ae9fc41e3a774e2ebf9ac088e4afd28e36791"
+    },
+    {
+      "path": "fpga/source/lane/lane_run_filter.v",
+      "bytes": 9360,
+      "sha256": "7ed9457749a574e4f4a2932044261ea995ad93a41cdce3d0da2e247bfdb5266c"
+    },
+    {
+      "path": "fpga/source/lane/lane_stream_adapter.v",
+      "bytes": 3575,
+      "sha256": "6c624a919885013398783867658fb7e0e3319198a1a84615cb886c488696cdd5"
+    },
+    {
+      "path": "fpga/source/lane/lane_top.v",
+      "bytes": 5210,
+      "sha256": "a320c0f52912e22c4f4c000b2c075c2dc1d7554deaef31bde289064fe8b86dd2"
+    },
+    {
+      "path": "fpga/source/lane/lane_track.v",
+      "bytes": 7340,
+      "sha256": "a86e446055d8439140febe1ec06822f46f2290f1828938b6e8bf52b1db31ae0e"
+    },
+    {
+      "path": "fpga/source/lane/line_fit.v",
+      "bytes": 11175,
+      "sha256": "e2fc0d1e846732711c0d98c91d058ea9b5e4bfd2687e7f2ebb0e125246b4d165"
+    },
+    {
+      "path": "fpga/source/lane/rgb565_to_gray.v",
+      "bytes": 1426,
+      "sha256": "c6bf6216d000dd8599a9d76a7c00782096ce96c232856a32d3ae7b16fd308d06"
+    },
+    {
+      "path": "fpga/source/lane/row_buffer_ram.v",
+      "bytes": 3237,
+      "sha256": "8e5e305ef00f7ec5efa29a5553a804a66d80ae0f4e3833b3701304081379fab1"
+    },
+    {
+      "path": "fpga/source/lane/row_remap.v",
+      "bytes": 4952,
+      "sha256": "687b097a8044d480a3f56f1eff09951e89f9322276d06a29f03a774284fe850f"
+    },
+    {
+      "path": "fpga/source/lane/scan_row_capture.v",
+      "bytes": 3183,
+      "sha256": "994bee4dba01c12e6b0fb6f89c49acbc6e8a8af4ee53504174be5001ae574212"
+    },
+    {
+      "path": "fpga/source/lane/scan_runs.v",
+      "bytes": 5082,
+      "sha256": "adfb97b245670315aac8c2a52f03f0fafed64834d24e2f5e274b4d2cfafb6c69"
+    },
+    {
+      "path": "fpga/source/lane/seq_div_unsigned.v",
+      "bytes": 3014,
+      "sha256": "6c404d422080efa9076b2c8a813c067f14455d477a90204d180f86bad862e636"
+    },
+    {
+      "path": "fpga/source/lane/sobel_x.v",
+      "bytes": 3629,
+      "sha256": "979be822eeb6460a28907d3e0c1e1a46744286b16528a6783ba5c3ff6e0cf371"
+    },
+    {
+      "path": "fpga/source/lane/vote5.v",
+      "bytes": 1995,
+      "sha256": "8ac2d4f797295d761dc995ec69ecdc6a5ad73b37ee0ce7861cfe5a62cd7adf5a"
+    },
+    {
+      "path": "fpga/source/osd/p3_osd_font_rom.v",
+      "bytes": 7098,
+      "sha256": "26008e19bbb2e8412bd9fd7c6b98c505ccd64ea155ab42d2af882e8959feeb7a"
+    },
+    {
+      "path": "fpga/source/osd/p3_osd_overlay.v",
+      "bytes": 6644,
+      "sha256": "ab09d4b8d4a78ec308852735c2665adf8e526d110e3e180b084426ba7470db56"
+    },
+    {
+      "path": "fpga/source/pcie/ips2l_pcie_dma.v",
+      "bytes": 24791,
+      "sha256": "6e23b2ca482a2d57fe6dbd19f7039d79d84e2d3d0a8dfc068f371c7b813192af"
+    },
+    {
+      "path": "fpga/source/pcie/lane_result_bar0.v",
+      "bytes": 6786,
+      "sha256": "563b1ed57672820d96f39a0eb3e74c1559f302b7d0f1fc8d95ebf443fb1f3a46"
+    },
+    {
+      "path": "fpga/source/pcie/p3_decision_bar0.v",
+      "bytes": 2961,
+      "sha256": "db142dee4818650344580479ba33ce05ae54fbac0ba63a4460d4c249af8a1a1b"
+    },
+    {
+      "path": "fpga/source/pcie/p3_decision_regs.v",
+      "bytes": 3829,
+      "sha256": "d939b80144337b867267a7dfbde040637dacd0252b1d125def7e87c5557f70b8"
+    },
+    {
+      "path": "fpga/source/pcie/p3_key_debounce.v",
+      "bytes": 1258,
+      "sha256": "df85c88b6dc0192f0e3c6b355765e9ef3260d7ae16236863e858935c9d273f3b"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/fifo/ipm_distributed_sdpram_v1_2_distributed_fifo.v",
+      "bytes": 3845,
+      "sha256": "0fe90c9c82183dcf40fbd7a2ad8fd493aad057bce05055542482aead8459875b"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/fifo/pgs_pciex4_fifo_ctrl.v",
+      "bytes": 2110,
+      "sha256": "dd0d5d0b46d5dadf5b6478cd181385e47cc1ac0c89fb6c4b6af3d75827cad8b4"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/fifo/pgs_pciex4_fifo_v1_2.v",
+      "bytes": 2738,
+      "sha256": "d6bc0cb14764a9f86ec313bae0a9a3080d461ccd8b7c7a679fb4442df6558adb"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ipm_distributed_sdpram_v1_2.v",
+      "bytes": 3744,
+      "sha256": "58b3fa2b8f756c84e57333acc2c91700c4dea52f46943a53275ae03dbd0da10c"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_expd_apb_mux.v",
+      "bytes": 4316,
+      "sha256": "cd7263cbf397d159c38501e81b5a3cc5c069473933a4f7127b42e7f7fafd661a"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma.v",
+      "bytes": 30305,
+      "sha256": "13a8dd2606e6f9b18ac423a2c3553d4750ec087b863cdf8fe8ff0f1780b7b4f8"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_controller.v",
+      "bytes": 18189,
+      "sha256": "b5db30e71eaf065d67a89e8956f548f3e36b669221755081a1673f21cbb5bfa3"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_cpld_tx_ctrl.v",
+      "bytes": 12862,
+      "sha256": "36bddf82f0d12840f0eb5f068f0e3b1c84ddb5223282c8cec64bd36a98bddbdb"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_mrd_tx_ctrl.v",
+      "bytes": 10919,
+      "sha256": "2f814fd090d5cf28ada2fe0d4912f117a41ce709487afad713176ba7909cb28e"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_mwr_tx_ctrl.v",
+      "bytes": 12463,
+      "sha256": "18c0287dbf999fa55adcbe53b8b3e75c324caf5c19e27e27020ec82451547ab7"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_ram/ips2l_pcie_dma_ram.v",
+      "bytes": 7883,
+      "sha256": "2619fccdd56692121da3e19e7490873a4061f30bead31cfd9ed3f28a99b45e23"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_ram/rtl/ipm2l_sdpram_v1_1_ips2l_pcie_dma_ram.v",
+      "bytes": 61169,
+      "sha256": "cd000003e91e1c8b345c82b1973ab8825bcd0b9b97f4c2db854056c2a797fb29"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_ram/rtl/ips2l_pcie_dma_ram_init_param.v",
+      "bytes": 244189,
+      "sha256": "c4551aad817da5633cd22e1250faf36a767136a7e33fbf6275523b2cfdd476f0"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_rd_ctrl.v",
+      "bytes": 8100,
+      "sha256": "cec633039efa96da8efe3defaa8e19b8297c78a51bcf6e1c9a3c202c62901314"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_rx_cpld_wr_ctrl.v",
+      "bytes": 6903,
+      "sha256": "0a8d8106c4722b18872f04c237a4d0574bcb42c82d08cfeaebd8808dbaa8f632"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_rx_mwr_wr_ctrl.v",
+      "bytes": 2750,
+      "sha256": "b3a5f0c3d52f7c04e9c95e07bd56194083db68b71a9cecde409cdb1f998c784d"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_rx_top.v",
+      "bytes": 20642,
+      "sha256": "5e9e9e13d06fc1be07359c3c30b95cc0e487a87f8f5025e7cafa1f77b9aee600"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_tlp_rcv.v",
+      "bytes": 20683,
+      "sha256": "9bcbf5972efaac344d120ca838be16fa9a53cc4afe14c35bc07a7af5a35acef6"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_tlp_tx_mux.v",
+      "bytes": 12391,
+      "sha256": "68f3b2366dcefe2146cb64a7093f4d44b64e5e6f4272791d6191fac54f48279c"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_tx_cpld_rd_ctrl.v",
+      "bytes": 2685,
+      "sha256": "65cc18bfb67200922b7d610e987b110f57e390ae091848b9636fadf8d22dbff2"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_tx_mwr_rd_ctrl.v",
+      "bytes": 4113,
+      "sha256": "6eba1289ea4509bc43f598f840a9fad93226517c0be64e509d966ac7685c480d"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_tx_top.v",
+      "bytes": 13424,
+      "sha256": "4a49df62eae1c36613044370484ae1673508a90f42b8004ddcb41038d5e612d1"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/ips2l_pcie_dma_wr_ctrl.v",
+      "bytes": 8094,
+      "sha256": "36901b12a0a47299299c667196b0d8116a696f042fd55b8d65d57fea05ada423"
+    },
+    {
+      "path": "fpga/source/pcie/pcie_dma_ctrl/pgs_pciex4_prefetch_fifo_v1_2.v",
+      "bytes": 5097,
+      "sha256": "774366ec7357621caed959cb6180cc6034f21ceafdfde9d9f3fa24f6848f1aee"
+    },
+    {
+      "path": "fpga/source/power_on_delay.v",
+      "bytes": 1361,
+      "sha256": "816c4a3b7bca6e23d62dd35e5be536e1714e7d0492057c02f35fd13ad6ad9ce6"
+    },
+    {
+      "path": "fpga/source/reg_config.v",
+      "bytes": 13335,
+      "sha256": "90655c60f921ec9c6a8fbf260be58d2f17f5df3889272114acda4184dd232d8f"
+    },
+    {
+      "path": "fpga/source/user/image_reshape.v",
+      "bytes": 2566,
+      "sha256": "b27ec399c4be018ea21d4363c77cbc39d55083f13cdf8f225b502265e154df7a"
+    },
+    {
+      "path": "fpga/source/user/pcie_img_select.v",
+      "bytes": 9997,
+      "sha256": "63600f1be913742120609efe65ebebfca4329c3445e9f9e6d88136cc5466eed6"
+    },
+    {
+      "path": "fpga/source/video/blur3x3.v",
+      "bytes": 3703,
+      "sha256": "0e0e3fe165f9298a0917a4f3d08850652a486caea98a6f7e721c68059a9492c2"
+    },
+    {
+      "path": "fpga/source/video/edge_threshold.v",
+      "bytes": 1041,
+      "sha256": "3da26def11e3d856a1677eed847930ef8efc109a1a5f79672989d3736044df0c"
+    },
+    {
+      "path": "fpga/source/video/rgb565_to_gray.v",
+      "bytes": 1426,
+      "sha256": "c6bf6216d000dd8599a9d76a7c00782096ce96c232856a32d3ae7b16fd308d06"
+    },
+    {
+      "path": "fpga/source/video/sobel_x.v",
+      "bytes": 3629,
+      "sha256": "979be822eeb6460a28907d3e0c1e1a46744286b16528a6783ba5c3ff6e0cf371"
+    },
+    {
+      "path": "fpga/project/project.pds",
+      "bytes": 44959,
+      "sha256": "0726d17676e28256c1eec933bd8749ba1aec132c65995a0fa795aea77ee59395"
+    },
+    {
+      "path": "fpga/project/impl.pds",
+      "bytes": 2966,
+      "sha256": "8f1e62340f77df2f3c139f7b101a13bca85cb895ae065f027537b106ab648309"
+    },
+    {
+      "path": "fpga/project/project.fdc",
+      "bytes": 44442,
+      "sha256": "5e1c557a285b19cacbeb7fcbc9193f5b1f501a218ac17836a6bfa70eac19b5ed"
+    },
+    {
+      "path": "fpga/project/device_map/image_pcie_capture.pcf",
+      "bytes": 9193,
+      "sha256": "4df15b73c5220291a4f27080a09028a1d3629a626101b13e17cdc3ba304d7935"
+    },
+    {
+      "path": "fpga/project/generate_bitstream/image_pcie_capture.sbit",
+      "bytes": 2113704,
+      "sha256": "a98fedea197cad365acd18af242dbe58bbcc1f082336b04b2239b8ad54e6e962"
+    },
+    {
+      "path": "fpga/project/generate_bitstream/image_pcie_capture.smsk",
+      "bytes": 2113704,
+      "sha256": "64489c656be5911510e7c83d4e380fd3cb88f7af02acbc651c0fa77220bc5f17"
+    }
+  ],
+  "sram_only": true,
+  "source_changed": false
+}

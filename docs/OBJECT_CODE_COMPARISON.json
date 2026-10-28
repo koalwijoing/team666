@@ -1,0 +1,134 @@
+[
+  {
+    "unit": "main.cpp",
+    "frozen_object_sha256": "f385008e8fc23efa32eb3c2a1411459fa6d2812048720027d56d5ad7c6084bda",
+    "rebuilt_object_sha256": "f385008e8fc23efa32eb3c2a1411459fa6d2812048720027d56d5ad7c6084bda",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "crosswalk_person.cpp",
+    "frozen_object_sha256": "a4ec08247e0a7a9dffcc4f8d3580705a150607c3ad2d3b94e40ed2acf7be2273",
+    "rebuilt_object_sha256": "a4ec08247e0a7a9dffcc4f8d3580705a150607c3ad2d3b94e40ed2acf7be2273",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "twinlite_lane_model.cpp",
+    "frozen_object_sha256": "2413842bccda0d9d79bd44c2ed84e0d0a4ebb1be632ed98a27629bcfe99963c4",
+    "rebuilt_object_sha256": "2413842bccda0d9d79bd44c2ed84e0d0a4ebb1be632ed98a27629bcfe99963c4",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "p3_engine.cpp",
+    "frozen_object_sha256": "2bd3ed50eedea3eefe5a4e4783b91b3c45b9b1a9a065160889491095e0dd6b8b",
+    "rebuilt_object_sha256": "2bd3ed50eedea3eefe5a4e4783b91b3c45b9b1a9a065160889491095e0dd6b8b",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "candidate_postprocess.cpp",
+    "frozen_object_sha256": "51362585e197e1d45f101f50057388c0ec43502769e0ec7e3eed40b153a2a91c",
+    "rebuilt_object_sha256": "51362585e197e1d45f101f50057388c0ec43502769e0ec7e3eed40b153a2a91c",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "lane_shared_frontend.cpp",
+    "frozen_object_sha256": "47e36ce20bf176baacffc03d9b963eb1d41500b199cf0c3b65e7ce0629bf56cb",
+    "rebuilt_object_sha256": "47e36ce20bf176baacffc03d9b963eb1d41500b199cf0c3b65e7ce0629bf56cb",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "twinlite_dash.cpp",
+    "frozen_object_sha256": "62ae0862c604bc96f0298ea2797c1259c65fc843d7877d55153bb111bdcb9c67",
+    "rebuilt_object_sha256": "62ae0862c604bc96f0298ea2797c1259c65fc843d7877d55153bb111bdcb9c67",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "p3_decision_bridge.cpp",
+    "frozen_object_sha256": "6ff1e8360b86cbfcc4b415f8a68baa73fd256a1d7e87422323f217e2bed9928b",
+    "rebuilt_object_sha256": "6ff1e8360b86cbfcc4b415f8a68baa73fd256a1d7e87422323f217e2bed9928b",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "decision_osd.cpp",
+    "frozen_object_sha256": "79c0db942505e551700066a5b84fb72deea7faa9b6a19bdb9bf75bb0ffcc5d8c",
+    "rebuilt_object_sha256": "79c0db942505e551700066a5b84fb72deea7faa9b6a19bdb9bf75bb0ffcc5d8c",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "ocr_pipeline.cpp",
+    "frozen_object_sha256": "13b69c4471d123ff6d167ff00279b0d954c35feac5cffb0a262d9bcb5a776ccb",
+    "rebuilt_object_sha256": "13b69c4471d123ff6d167ff00279b0d954c35feac5cffb0a262d9bcb5a776ccb",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "road_speed_estimator.cpp",
+    "frozen_object_sha256": "9373e02674a6974c9f79bd6eb8add5796f0fff68ab028e4557b12f495e771f8b",
+    "rebuilt_object_sha256": "9373e02674a6974c9f79bd6eb8add5796f0fff68ab028e4557b12f495e771f8b",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "ufld_lane_model.cpp",
+    "frozen_object_sha256": "a1e7dbe9e1e6dece041418c5615e15afdb82f574953baec1e938aeb5f044559e",
+    "rebuilt_object_sha256": "a1e7dbe9e1e6dece041418c5615e15afdb82f574953baec1e938aeb5f044559e",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "yolo.cpp",
+    "frozen_object_sha256": "d33fa6595ebbba91398b92a27f748909a38fb747001cabccbdee3db68e771599",
+    "rebuilt_object_sha256": "d33fa6595ebbba91398b92a27f748909a38fb747001cabccbdee3db68e771599",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "p3_road_safety_advisor.cpp",
+    "frozen_object_sha256": "e6bee622fddd07c2eb1a75dce7334efbd86a3d8209f7e19c6b50b41259870071",
+    "rebuilt_object_sha256": "e6bee622fddd07c2eb1a75dce7334efbd86a3d8209f7e19c6b50b41259870071",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "experiment_metrics.cpp",
+    "frozen_object_sha256": "4282d08dd825a37e49f375e77c4112db328a39242b6e9ca74ab47592741c7864",
+    "rebuilt_object_sha256": "4282d08dd825a37e49f375e77c4112db328a39242b6e9ca74ab47592741c7864",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "local_segments_mirror.cpp",
+    "frozen_object_sha256": "6871c589a798f9854a1f46f92af1058a92338f327b5695555c1079dd4641c098",
+    "rebuilt_object_sha256": "6871c589a798f9854a1f46f92af1058a92338f327b5695555c1079dd4641c098",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "pci_bar0.cpp",
+    "frozen_object_sha256": "dc9d273a2ce2ffe1a0419d079c45c1275f8504e6ab5df761ddd24ffe37c18ac3",
+    "rebuilt_object_sha256": "dc9d273a2ce2ffe1a0419d079c45c1275f8504e6ab5df761ddd24ffe37c18ac3",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "pcie_frame_source.cpp",
+    "frozen_object_sha256": "6e1768c6be46361a14a6268bee50f3992ba7170877c1722f03ed025a0045301e",
+    "rebuilt_object_sha256": "6e1768c6be46361a14a6268bee50f3992ba7170877c1722f03ed025a0045301e",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "perf_config.cpp",
+    "frozen_object_sha256": "09fe73044685cef20c1ab3113d8f4dcff5d9ac634cf6100f6dd5ee01b8ca8eba",
+    "rebuilt_object_sha256": "09fe73044685cef20c1ab3113d8f4dcff5d9ac634cf6100f6dd5ee01b8ca8eba",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "postprocess.c",
+    "frozen_object_sha256": "17fce000fea1f957001da80b418c19129c95f538a18580f2c15ea4e51c73cbcb",
+    "rebuilt_object_sha256": "17fce000fea1f957001da80b418c19129c95f538a18580f2c15ea4e51c73cbcb",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "selector_mirror.cpp",
+    "frozen_object_sha256": "0a350a56582ca5b733acf39974e50740951388bb508945b844797e9df0b5db2e",
+    "rebuilt_object_sha256": "0a350a56582ca5b733acf39974e50740951388bb508945b844797e9df0b5db2e",
+    "executable_sections_identical": true
+  },
+  {
+    "unit": "twin_route.cpp",
+    "frozen_object_sha256": "39ab429b744bc94d53d49e7f2e96d435c49413db8795e7d6ee2ba3754c2e5dd5",
+    "rebuilt_object_sha256": "39ab429b744bc94d53d49e7f2e96d435c49413db8795e7d6ee2ba3754c2e5dd5",
+    "executable_sections_identical": true
+  }
+]

@@ -1,0 +1,287 @@
+Start testing: Oct 28 09:34 UTC
+----------------------------------------------------------
+1/4 Testing: hw_osd
+1/4 Test: hw_osd
+Command: "/userdata/codex_source_package_20261028_r01/package/build/arm/test_hw_osd"
+Directory: /userdata/codex_source_package_20261028_r01/package/build/arm
+"hw_osd" start time: Oct 28 09:34 UTC
+Output:
+----------------------------------------------------------
+HW_OSD_TESTS checks=8 failures=0
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"hw_osd" end time: Oct 28 09:34 UTC
+"hw_osd" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: crosswalk
+2/4 Test: crosswalk
+Command: "/userdata/codex_source_package_20261028_r01/package/build/arm/test_crosswalk"
+Directory: /userdata/codex_source_package_20261028_r01/package/build/arm
+"crosswalk" start time: Oct 28 09:34 UTC
+Output:
+----------------------------------------------------------
+CROSSWALK_TESTS checks=66 failures=0
+<end of output>
+Test time =   1.35 sec
+----------------------------------------------------------
+Test Passed.
+"crosswalk" end time: Oct 28 09:34 UTC
+"crosswalk" time elapsed: 00:00:01
+----------------------------------------------------------
+
+3/4 Testing: baseline_ad_request
+3/4 Test: baseline_ad_request
+Command: "/userdata/codex_source_package_20261028_r01/package/build/arm/baseline_ad_request"
+Directory: /userdata/codex_source_package_20261028_r01/package/build/arm
+"baseline_ad_request" start time: Oct 28 09:34 UTC
+Output:
+----------------------------------------------------------
+[decision] frame=1 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=-
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x04 action=3 lane=0 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: granted left change
+[key-request] frame=3 input=0x00 evaluated=0x04 pending=0x00 deadline_ms=101200.0 result=last A: granted left change
+[decision] frame=3 action=3 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(1,0,0) light_ev=[no-light] reason=last A: granted left change
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: granted left change
+[key-request] frame=2 input=0x08 evaluated=0x00 pending=0x08 deadline_ms=101200.0 result=last D: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x08 action=4 lane=2 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: granted right change
+[key-request] frame=3 input=0x00 evaluated=0x08 pending=0x00 deadline_ms=101200.0 result=last D: granted right change
+[decision] frame=3 action=4 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,0,1) light_ev=[no-light] reason=last D: granted right change
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: granted right change
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x00 evaluated=0x00 pending=0x00 deadline_ms=101200.0 result=last A: expired: evidence not ready; press again
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: expired: evidence not ready; press again
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=4 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=5 input=0x00 evaluated=0x00 pending=0x00 deadline_ms=101200.0 result=last A: expired: evidence not ready; press again
+[decision] frame=5 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: expired: evidence not ready; press again
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x04 action=0 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(2,2) result=last A: refused: solid line lane change
+[key-request] frame=3 input=0x00 evaluated=0x04 pending=0x00 deadline_ms=101200.0 result=last A: refused: solid line lane change
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(2,2) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: refused: solid line lane change | now: solid line lane change
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x04 action=0 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(3,3) result=last A: refused: left lane data invalid
+[key-request] frame=3 input=0x00 evaluated=0x04 pending=0x00 deadline_ms=101200.0 result=last A: refused: left lane data invalid
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(3,3) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: refused: left lane data invalid | now: left lane data invalid
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x04 action=0 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: refused: left lane change safety evidence incomplete
+[key-request] frame=3 input=0x00 evaluated=0x04 pending=0x00 deadline_ms=101200.0 result=last A: refused: left lane change safety evidence incomplete
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: refused: left lane change safety evidence incomplete | now: left lane change safety evidence incomplete
+[key-request] frame=2 input=0x08 evaluated=0x00 pending=0x08 deadline_ms=101200.0 result=last D: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x08 action=2 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: refused: unproven ego-path overlap; caution only (no direct stop)
+[key-request] frame=3 input=0x00 evaluated=0x08 pending=0x00 deadline_ms=101200.0 result=last D: refused: unproven ego-path overlap; caution only (no direct stop)
+[decision] frame=3 action=2 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last D: refused: unproven ego-path overlap; caution only (no direct stop) | now: unproven ego-path overlap; caution only (no direct stop)
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last D: refused: unproven ego-path overlap; caution only (no direct stop) | now: right lane change safety evidence incomplete
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x04 action=1 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: refused: large front road user (uncalibrated image-size heuristic)
+[key-request] frame=3 input=0x00 evaluated=0x04 pending=0x00 deadline_ms=101200.0 result=last A: refused: large front road user (uncalibrated image-size heuristic)
+[decision] frame=3 action=1 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: large front road user (uncalibrated image-size heuristic) | now: large front road user (uncalibrated image-size heuristic)
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: large front road user (uncalibrated image-size heuristic)
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x01 evaluated=0x01 pending=0x00 deadline_ms=101200.0 result=last A: cancelled: control key changed
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: control key changed
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x02 evaluated=0x02 pending=0x00 deadline_ms=101200.0 result=last A: cancelled: control key changed
+[decision] frame=3 action=1 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: control key changed
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x10 evaluated=0x10 pending=0x00 deadline_ms=101200.0 result=last A: cancelled: control key changed
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: control key changed
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x0c action=0 lane=1 left_gate=0 right_gate=0 twin_fresh=0 types=(0,0) result=last A+D: refused: conflicting left/right lane requests
+[key-request] frame=3 input=0x0c evaluated=0x0c pending=0x00 deadline_ms=101200.0 result=last A+D: refused: conflicting left/right lane requests
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A+D: refused: conflicting left/right lane requests | now: conflicting left/right lane requests
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x08 action=4 lane=2 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: granted right change
+[key-request] frame=3 input=0x08 evaluated=0x08 pending=0x00 deadline_ms=101300.0 result=last D: granted right change
+[decision] frame=3 action=4 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,0,1) light_ev=[no-light] reason=last D: granted right change
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: granted right change
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x00 evaluated=0x00 pending=0x00 deadline_ms=101200.0 result=last A: cancelled: decision ABI unavailable
+[decision] frame=3 action=1 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=0 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: decision ABI unavailable | now: decision ABI mismatch: STATUS reserved bits are nonzero
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: decision ABI unavailable
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x04 action=1 lane=1 left_gate=1 right_gate=1 twin_fresh=1 types=(1,1) result=last A: refused: lane change blocked by red/unknown light
+[key-request] frame=3 input=0x00 evaluated=0x04 pending=0x00 deadline_ms=101200.0 result=last A: refused: lane change blocked by red/unknown light
+[decision] frame=3 action=1 light=1 stale=0 dir=round conf=0.90 lf=1 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[stop@0.90* ] reason=last A: refused: lane change blocked by red/unknown light | now: lane change blocked by red/unknown light
+[decision] frame=23 action=1 light=1 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: lane change blocked by red/unknown light
+[decision] frame=30 action=1 light=1 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: lane change blocked by red/unknown light
+[decision] frame=34 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=-
+[key-feedback] frame=2 events=0x08 action=4 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: granted right change
+[key-request] frame=2 input=0x08 evaluated=0x08 pending=0x00 deadline_ms=101200.0 result=last D: granted right change
+[decision] frame=2 action=4 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,0,1) light_ev=[no-light] reason=last D: granted right change
+[key-feedback] frame=2 events=0x04 action=3 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: granted left change
+[key-request] frame=2 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=101200.0 result=last A: granted left change
+[decision] frame=2 action=3 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(1,0,0) light_ev=[no-light] reason=last A: granted left change
+[key-feedback] frame=2 events=0x04 action=0 lane=0 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: refused: left edge lane
+[key-request] frame=2 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=101200.0 result=last A: refused: left edge lane
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: refused: left edge lane | now: left edge lane
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=2 input=0x08 evaluated=0x00 pending=0x08 deadline_ms=101200.0 result=last D: waiting: fresh vehicle clearance evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: waiting: fresh vehicle clearance evidence
+[key-feedback] frame=3 events=0x08 action=4 lane=2 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: granted right change
+[key-request] frame=3 input=0x00 evaluated=0x08 pending=0x00 deadline_ms=101200.0 result=last D: granted right change
+[decision] frame=3 action=4 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,0,1) light_ev=[no-light] reason=last D: granted right change
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=101200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x00 evaluated=0x00 pending=0x00 deadline_ms=101200.0 result=last A: expired: evidence not ready; press again
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: expired: evidence not ready; press again
+AD_REQUEST_TESTS checks=49 failures=0
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"baseline_ad_request" end time: Oct 28 09:34 UTC
+"baseline_ad_request" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: interaction_profile
+4/4 Test: interaction_profile
+Command: "/userdata/codex_source_package_20261028_r01/package/build/arm/interaction_profile"
+Directory: /userdata/codex_source_package_20261028_r01/package/build/arm
+"interaction_profile" start time: Oct 28 09:34 UTC
+Output:
+----------------------------------------------------------
+[decision] frame=1 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=-
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=102200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x04 action=3 lane=0 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: granted left change
+[key-request] frame=3 input=0x00 evaluated=0x04 pending=0x00 deadline_ms=102200.0 result=last A: granted left change
+[decision] frame=3 action=3 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(1,0,0) light_ev=[no-light] reason=last A: granted left change
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: granted left change
+[key-request] frame=2 input=0x08 evaluated=0x00 pending=0x08 deadline_ms=102200.0 result=last D: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x08 action=4 lane=2 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: granted right change
+[key-request] frame=3 input=0x00 evaluated=0x08 pending=0x00 deadline_ms=102200.0 result=last D: granted right change
+[decision] frame=3 action=4 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,0,1) light_ev=[no-light] reason=last D: granted right change
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: granted right change
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=102200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x00 evaluated=0x00 pending=0x00 deadline_ms=102200.0 result=last A: expired: evidence not ready; press again
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: expired: evidence not ready; press again
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=102200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=4 input=0x00 evaluated=0x00 pending=0x00 deadline_ms=102200.0 result=last A: expired: evidence not ready; press again
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: expired: evidence not ready; press again
+[key-feedback] frame=2 events=0x04 action=3 lane=0 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: granted left change
+[key-request] frame=2 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102200.0 result=last A: granted left change
+[decision] frame=2 action=3 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(1,0,0) light_ev=[no-light] reason=last A: granted left change
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: granted left change
+[key-feedback] frame=4 events=0x04 action=3 lane=0 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: granted left change
+[key-request] frame=4 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102400.0 result=last A: granted left change
+[decision] frame=4 action=3 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(1,0,0) light_ev=[no-light] reason=last A: granted left change
+[decision] frame=5 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: granted left change
+[key-feedback] frame=6 events=0x04 action=0 lane=0 left_gate=0 right_gate=0 twin_fresh=1 types=(2,2) result=last A: refused: solid line lane change
+[key-request] frame=6 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102600.0 result=last A: refused: solid line lane change
+[decision] frame=6 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(2,2) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: refused: solid line lane change | now: solid line lane change
+[key-feedback] frame=2 events=0x08 action=4 lane=2 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: granted right change
+[key-request] frame=2 input=0x08 evaluated=0x08 pending=0x00 deadline_ms=102200.0 result=last D: granted right change
+[decision] frame=2 action=4 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,0,1) light_ev=[no-light] reason=last D: granted right change
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: granted right change
+[key-feedback] frame=4 events=0x08 action=4 lane=2 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: granted right change
+[key-request] frame=4 input=0x08 evaluated=0x08 pending=0x00 deadline_ms=102400.0 result=last D: granted right change
+[decision] frame=4 action=4 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,0,1) light_ev=[no-light] reason=last D: granted right change
+[decision] frame=5 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: granted right change
+[key-feedback] frame=6 events=0x08 action=0 lane=2 left_gate=0 right_gate=0 twin_fresh=1 types=(2,2) result=last D: refused: solid line lane change
+[key-request] frame=6 input=0x08 evaluated=0x08 pending=0x00 deadline_ms=102600.0 result=last D: refused: solid line lane change
+[decision] frame=6 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(2,2) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last D: refused: solid line lane change | now: solid line lane change
+[key-request] frame=2 input=0x08 evaluated=0x00 pending=0x08 deadline_ms=102200.0 result=last D: waiting: fresh vehicle clearance evidence
+[decision] frame=2 action=2 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: waiting: fresh vehicle clearance evidence | now: unproven ego-path overlap; caution only (no direct stop)
+[key-feedback] frame=3 events=0x08 action=4 lane=2 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: granted right change
+[key-request] frame=3 input=0x00 evaluated=0x08 pending=0x00 deadline_ms=102200.0 result=last D: granted right change
+[decision] frame=3 action=4 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,0,1) light_ev=[no-light] reason=last D: granted right change
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: granted right change
+[key-request] frame=2 input=0x08 evaluated=0x00 pending=0x08 deadline_ms=102200.0 result=last D: waiting: fresh vehicle clearance evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last D: waiting: fresh vehicle clearance evidence
+[key-feedback] frame=3 events=0x08 action=4 lane=2 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: granted right change
+[key-request] frame=3 input=0x00 evaluated=0x08 pending=0x00 deadline_ms=102200.0 result=last D: granted right change
+[decision] frame=3 action=4 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,0,1) light_ev=[no-light] reason=last D: granted right change
+[key-feedback] frame=2 events=0x04 action=0 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: refused: left lane change safety evidence incomplete
+[key-request] frame=2 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102200.0 result=last A: refused: left lane change safety evidence incomplete
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: refused: left lane change safety evidence incomplete | now: left lane change safety evidence incomplete
+[key-feedback] frame=2 events=0x08 action=0 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last D: refused: right lane change safety evidence incomplete
+[key-request] frame=2 input=0x08 evaluated=0x08 pending=0x00 deadline_ms=102200.0 result=last D: refused: right lane change safety evidence incomplete
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last D: refused: right lane change safety evidence incomplete | now: right lane change safety evidence incomplete
+[key-feedback] frame=2 events=0x04 action=0 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(2,2) result=last A: refused: solid line lane change
+[key-request] frame=2 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102200.0 result=last A: refused: solid line lane change
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(2,2) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: refused: solid line lane change | now: solid line lane change
+[key-feedback] frame=2 events=0x04 action=0 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(3,3) result=last A: refused: left lane data invalid
+[key-request] frame=2 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102200.0 result=last A: refused: left lane data invalid
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(3,3) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: refused: left lane data invalid | now: left lane data invalid
+[key-feedback] frame=2 events=0x04 action=1 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: refused: large front road user (uncalibrated image-size heuristic)
+[key-request] frame=2 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102200.0 result=last A: refused: large front road user (uncalibrated image-size heuristic)
+[decision] frame=2 action=1 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: large front road user (uncalibrated image-size heuristic) | now: large front road user (uncalibrated image-size heuristic)
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: large front road user (uncalibrated image-size heuristic)
+[key-feedback] frame=2 events=0x04 action=2 lane=1 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: refused: near front road user (uncalibrated image-size heuristic)
+[key-request] frame=2 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102200.0 result=last A: refused: near front road user (uncalibrated image-size heuristic)
+[decision] frame=2 action=2 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: near front road user (uncalibrated image-size heuristic) | now: near front road user (uncalibrated image-size heuristic)
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: near front road user (uncalibrated image-size heuristic)
+[key-feedback] frame=2 events=0x04 action=1 lane=1 left_gate=1 right_gate=1 twin_fresh=1 types=(1,1) result=last A: refused: lane change blocked by red/unknown light
+[key-request] frame=2 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102200.0 result=last A: refused: lane change blocked by red/unknown light
+[decision] frame=2 action=1 light=1 stale=0 dir=round conf=0.90 lf=1 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=1 led=(0,1,0) light_ev=[stop@0.90* ] reason=last A: refused: lane change blocked by red/unknown light | now: lane change blocked by red/unknown light
+[decision] frame=22 action=1 light=1 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: lane change blocked by red/unknown light
+[decision] frame=30 action=1 light=1 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: refused: lane change blocked by red/unknown light
+[decision] frame=33 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=-
+[decision] frame=5 action=2 light=3 stale=0 dir=round conf=0.90 lf=1 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[warning@0.90* ] reason=-
+[key-feedback] frame=9 events=0x04 action=2 lane=1 left_gate=3 right_gate=3 twin_fresh=1 types=(1,1) result=last A: refused: yellow light priority over lane change
+[key-request] frame=9 input=0x04 evaluated=0x04 pending=0x00 deadline_ms=102900.0 result=last A: refused: yellow light priority over lane change
+[decision] frame=9 action=2 light=3 stale=0 dir=round conf=0.90 lf=1 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[warning@0.90* ] reason=last A: refused: yellow light priority over lane change | now: yellow light priority over lane change
+[decision] frame=1 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=-
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=102200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=401.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x04 action=3 lane=0 left_gate=0 right_gate=0 twin_fresh=1 types=(1,1) result=last A: granted left change
+[key-request] frame=3 input=0x00 evaluated=0x04 pending=0x00 deadline_ms=102200.0 result=last A: granted left change
+[decision] frame=3 action=3 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=0 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(1,0,0) light_ev=[no-light] reason=last A: granted left change
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=102200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x01 evaluated=0x01 pending=0x00 deadline_ms=102200.0 result=last A: cancelled: control key changed
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=2 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: control key changed
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=102200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x02 evaluated=0x02 pending=0x00 deadline_ms=102200.0 result=last A: cancelled: control key changed
+[decision] frame=3 action=1 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: control key changed
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=102200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x10 evaluated=0x10 pending=0x00 deadline_ms=102200.0 result=last A: cancelled: control key changed
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: control key changed
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=102200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-feedback] frame=3 events=0x0c action=0 lane=1 left_gate=0 right_gate=0 twin_fresh=0 types=(0,0) result=last A+D: refused: conflicting left/right lane requests
+[key-request] frame=3 input=0x0c evaluated=0x0c pending=0x00 deadline_ms=102200.0 result=last A+D: refused: conflicting left/right lane requests
+[decision] frame=3 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A+D: refused: conflicting left/right lane requests | now: conflicting left/right lane requests
+[key-request] frame=2 input=0x04 evaluated=0x00 pending=0x04 deadline_ms=102200.0 result=last A: waiting: fresh dashed lane evidence
+[decision] frame=2 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(0,0) twin_fresh=0 twin_age_ms=-1.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: waiting: fresh dashed lane evidence
+[key-request] frame=3 input=0x00 evaluated=0x00 pending=0x00 deadline_ms=102200.0 result=last A: cancelled: decision ABI unavailable
+[decision] frame=3 action=1 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=0 alarm=1 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: decision ABI unavailable | now: decision ABI mismatch: STATUS reserved bits are nonzero
+[decision] frame=4 action=0 light=0 stale=0 dir=unknown conf=0.00 lf=0 lane=1 lane_source=twinlite types=(1,1) twin_fresh=1 twin_age_ms=20.0 abi=1 alarm=0 led=(0,1,0) light_ev=[no-light] reason=last A: cancelled: decision ABI unavailable
+INTERACTION_PROFILE checks=54 failures=0
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"interaction_profile" end time: Oct 28 09:34 UTC
+"interaction_profile" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 28 09:34 UTC

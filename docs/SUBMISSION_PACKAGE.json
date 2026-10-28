@@ -1,0 +1,13 @@
+{
+  "archive_name": "慧目智行_完整代码_20261028.rar",
+  "archive_bytes": 22424872,
+  "archive_sha256": "3e91835c68db76662a3cfb2b7879ec9176ceeed479bb968b17aaa42ace8a3129",
+  "archive_file_count": 233,
+  "archive_uploaded_to_git": false,
+  "source_layout": "same app/ fpga/ deployment/ scripts/ docs/ layout as the RAR",
+  "source_code_models_and_firmware_identical": true,
+  "documentation": "Homepage and deployment description retain user edits from b92ab78 and clarify source locations and the existing F-key behavior. Git configuration and checksum files are adapted to the repository.",
+  "F_key_behavior_changed": false,
+  "board_default_changed": false,
+  "source_build_record": "BUILD_VALIDATION.json"
+}
