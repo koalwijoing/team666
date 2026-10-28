@@ -1,0 +1,39 @@
+{
+  "old_entry_sha256": "f7bd486c43f498fb4ba75cc005304c4092297cea6febee34a27fafbc411ef2ab",
+  "new_entry_sha256": "498534d85555ecc2d685945a9292f0be1b7e8fc4659cd32795da6ac80fdbc915",
+  "app_sha256": "3b1d686cb900673a92a36d9c6038da65c37c2c653e43cccb01784851319a3afd",
+  "app": "/userdata/codex_lane_interaction_release_20261028_r01/build/app",
+  "previous_app": "/userdata/codex_pad_crosswalk_release_20261027_r01/build/app",
+  "model": "/userdata/codex_rknn_accept_20261026_r01/models/twin_pad.rknn",
+  "desktop_unchanged": true,
+  "fpga_changed": false,
+  "default_profile": {
+    "wait_ms": 2000,
+    "retry_uncertain": true,
+    "strict_simulated_edge": false
+  },
+  "historical_csv_preserved": true,
+  "new_csv_files_per_run": true,
+  "preview_stats": [
+    {
+      "run_id": "run_20261028_071651",
+      "schema_version": "3",
+      "frames": "1280",
+      "seconds": "136.3852",
+      "processed_fps": "9.3852",
+      "frame_ms_mean": "106.4793",
+      "frame_ms_p95": "187.1923",
+      "frame_ms_max": "242.2051",
+      "light_succeeded": "640",
+      "light_failed": "0",
+      "light_hz": "4.6926",
+      "sign_succeeded": "0",
+      "sign_failed": "0",
+      "sign_hz": "0.0000",
+      "object_succeeded": "1280",
+      "object_failed": "0",
+      "object_hz": "9.3852",
+      "p95_method": "precise"
+    }
+  ]
+}

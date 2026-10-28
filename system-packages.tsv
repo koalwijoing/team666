@@ -1,0 +1,55 @@
+fonts-wqy-zenhei	0.9.45-8	all
+libfreetype6	2.12.1+dfsg-5+deb12u4	arm64
+libgtk2.0-0	2.24.33-2+deb12u1	arm64
+libopencv-calib3d-dev	4.6.0+dfsg-12	arm64
+libopencv-calib3d406	4.6.0+dfsg-12	arm64
+libopencv-contrib-dev	4.6.0+dfsg-12	arm64
+libopencv-contrib406	4.6.0+dfsg-12	arm64
+libopencv-core-dev	4.6.0+dfsg-12	arm64
+libopencv-core4.5		
+libopencv-core406	4.6.0+dfsg-12	arm64
+libopencv-dev	4.6.0+dfsg-12	arm64
+libopencv-dnn-dev	4.6.0+dfsg-12	arm64
+libopencv-dnn406	4.6.0+dfsg-12	arm64
+libopencv-features2d-dev	4.6.0+dfsg-12	arm64
+libopencv-features2d406	4.6.0+dfsg-12	arm64
+libopencv-flann-dev	4.6.0+dfsg-12	arm64
+libopencv-flann406	4.6.0+dfsg-12	arm64
+libopencv-highgui-dev	4.6.0+dfsg-12	arm64
+libopencv-highgui406	4.6.0+dfsg-12	arm64
+libopencv-imgcodecs-dev	4.6.0+dfsg-12	arm64
+libopencv-imgcodecs406	4.6.0+dfsg-12	arm64
+libopencv-imgproc-dev	4.6.0+dfsg-12	arm64
+libopencv-imgproc406	4.6.0+dfsg-12	arm64
+libopencv-java		
+libopencv-ml-dev	4.6.0+dfsg-12	arm64
+libopencv-ml406	4.6.0+dfsg-12	arm64
+libopencv-objdetect-dev	4.6.0+dfsg-12	arm64
+libopencv-objdetect406	4.6.0+dfsg-12	arm64
+libopencv-photo-dev	4.6.0+dfsg-12	arm64
+libopencv-photo406	4.6.0+dfsg-12	arm64
+libopencv-shape-dev	4.6.0+dfsg-12	arm64
+libopencv-shape406	4.6.0+dfsg-12	arm64
+libopencv-stitching-dev	4.6.0+dfsg-12	arm64
+libopencv-stitching406	4.6.0+dfsg-12	arm64
+libopencv-superres-dev	4.6.0+dfsg-12	arm64
+libopencv-superres406	4.6.0+dfsg-12	arm64
+libopencv-video-dev	4.6.0+dfsg-12	arm64
+libopencv-video406	4.6.0+dfsg-12	arm64
+libopencv-videoio-dev	4.6.0+dfsg-12	arm64
+libopencv-videoio406	4.6.0+dfsg-12	arm64
+libopencv-videostab-dev	4.6.0+dfsg-12	arm64
+libopencv-videostab406	4.6.0+dfsg-12	arm64
+libopencv-viz-dev	4.6.0+dfsg-12	arm64
+libopencv-viz406	4.6.0+dfsg-12	arm64
+libqt5core5a	5.15.8+dfsg-11+deb12u2	arm64
+libqt5dbus5	5.15.8+dfsg-11+deb12u2	arm64
+libqt5gui5	5.15.8+dfsg-11+deb12u2	arm64
+libqt5gui5-gles		
+libqt5network5	5.15.8+dfsg-11+deb12u2	arm64
+libqt5opengl5	5.15.8+dfsg-11+deb12u2	arm64
+libqt5svg5		
+libqt5test5	5.15.8+dfsg-11+deb12u2	arm64
+libqt5widgets5	5.15.8+dfsg-11+deb12u2	arm64
+libx11-6	2:1.8.4-2+deb12u2	arm64
+python3	3.11.2-1+b1	arm64

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=P3 ADAS Default
+Name[zh_CN]=P3 智能驾驶（正式默认）
+Comment=ATLAS v4 + display upgrade (local lane evidence) + TwinLite; legacy RTL lane overlay OFF; guarded simulated OSD, no actuators
+Comment[zh_CN]=ATLAS v4+显示升级（局部车道证据）+TwinLite 自绘；旧 RTL 绘线已关闭；保护式模拟决策，不控制真实车辆
+Exec=sudo -n env DISPLAY=:0 XAUTHORITY=/home/linaro/.Xauthority /userdata/claude_qt_async_default_20261021/start_qt_async_default.sh
+Icon=camera-video
+Terminal=false
+StartupNotify=false
+Categories=AudioVideo;Video;
