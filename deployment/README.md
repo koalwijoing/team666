@@ -83,7 +83,7 @@ sudo insmod /userdata/team666_default_20261028/driver/pango_pci_driver.ko
 
 ```bash
 git clone https://github.com/koalwijoing/team666.git
-cd team666
+cd team666/deployment
 python3 scripts/verify.py
 sha256sum -c SHA256SUMS
 ```
